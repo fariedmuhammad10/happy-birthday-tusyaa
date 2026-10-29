@@ -10,31 +10,31 @@ const CONFIG = {
   letter:
 `haii tusyaa
 
-selamat ulang tahun yaa sayanggg 🎂
+selamat ulang tahun yaa sayang 🎂
 
-jadi gini, aku tuh bingung mau ngasih apa, terus kepikiran bikin ginian. jangan diketawain ya, aku bikinnya sambil deg-degan takut kamu ga suka wkwk
+aku pengen bikin sesuatu yang spesial buat hari ulang tahun kamu hari ini, makanya aku bikinin halaman kecil ini khusus buat kamu.
 
-makasih ya udah sabar sama aku, udah mau dengerin aku ngoceh ga jelas, udah mau aku gangguin tiap hari. aku tau aku kadang nyebelin, tapi kamu tetep di sini. aku bersyukur banget sih soal itu
+makasih ya sudah sabar ngadepin aku yang begini, makasih udah mau nemenin proses aku, udah mau dengerin curhatan aku, aku tau aku nyebelin dan sering ga konsisten, tapi kamu tetep disini ga ninggalin aku, selalu ngelurusin aku kalo sudah mulai ga beraturan. aku bersyukur kamu masih hidup hingga saat ini
 
-doa aku buat kamu simpel aja: sehat terus, jangan kebanyakan begadang, rezekinya lancar, terus yang kamu pengen kesampean satu-satu. kalo lagi cape atau sedih jangan dipendem sendiri, cerita ke aku
+doa aku buat kamu, semoga rezekinya lancar, semua yang kamu inginkan tercapai, dan dalam mencapainya kamu dimudahkan dan dilancarkan. kalo lagi sedih jangan dipendam sendiri ya sayang, im right here if u need me yaaa!
 
-udah ah segini dulu, ntar malah kepanjangan. pokoknya aku sayang kamu banyak bangettt`,
+sekali lagi selamat ulang tahun ya sayang, aku sayang kamu banyak-banyak 🤍`,
 
   // foto + caption galeri (email #2)
   photos: [
-    { src: 'photos/foto-03.jpg', cap: 'bando strawberry-nya lucu bgt 🍓' },
-    { src: 'photos/foto-00.jpg', cap: 'pengen nyubit pipinya' },
-    { src: 'photos/foto-08.jpg', cap: 'cantik bgt ini serius' },
-    { src: 'photos/foto-06.jpg', cap: 'INI FAVORIT AKU 😭' },
-    { src: 'photos/foto-01.jpg', cap: 'pake kacamata gini manis bgt' },
-    { src: 'photos/foto-05.jpg', cap: 'kok natapnya gitu bu' },
-    { src: 'photos/foto-07.jpg', cap: 'rebahan doang padahal' },
-    { src: 'photos/foto-11.jpg', cap: 'mirror selfie dulu 📸' },
-    { src: 'photos/foto-04.jpg', cap: 'ngantuk ya sayang' },
-    { src: 'photos/foto-12.jpg', cap: 'siap komandan 🫡' },
-    { src: 'photos/foto-09.jpg', cap: 'lagi mikirin aku pasti' },
-    { src: 'photos/foto-02.jpg', cap: 'muka minta dimanja 🥺' },
-    { src: 'photos/foto-10.jpg', cap: 'tusyaa x4 = aku makin pusing' },
+    { src: 'photos/foto-03.jpg', cap: 'my favorite girl' },
+    { src: 'photos/foto-00.jpg', cap: 'cantik terus' },
+    { src: 'photos/foto-08.jpg', cap: 'senyum favorit aku' },
+    { src: 'photos/foto-06.jpg', cap: 'gemes' },
+    { src: 'photos/foto-01.jpg', cap: 'manis banget' },
+    { src: 'photos/foto-05.jpg', cap: 'pretty as always' },
+    { src: 'photos/foto-07.jpg', cap: 'tetep cantik' },
+    { src: 'photos/foto-11.jpg', cap: 'mirror shot' },
+    { src: 'photos/foto-04.jpg', cap: 'cutest' },
+    { src: 'photos/foto-12.jpg', cap: 'kesayangan' },
+    { src: 'photos/foto-09.jpg', cap: 'effortlessly pretty' },
+    { src: 'photos/foto-02.jpg', cap: 'my safe place' },
+    { src: 'photos/foto-10.jpg', cap: '4x prettier' },
   ],
 
   // hal-hal yang aku suka dari kamu (email #3)
@@ -80,10 +80,10 @@ const KEY = 'bday-' + CONFIG.name;
 
 const MAILS = [
   { id: 'letter',  fav: true, icon: '💌', subject: `happy birthday ${CONFIG.name} 🎂`, preview: 'buka yang ini dulu yaa', time: '00:00', chip: '📝 surat.txt', render: renderLetter },
-  { id: 'gallery', fav: true, icon: '📸', subject: 'foto-foto kamu', preview: 'yang aku simpen diem-diem hehe', time: '00:01', chip: `🖼️ ${CONFIG.photos.length} foto`, render: renderGallery },
+  { id: 'gallery', fav: true, icon: '📸', subject: 'foto-foto kamu', preview: 'beberapa foto favorit aku', time: '00:01', chip: `🖼️ ${CONFIG.photos.length} foto`, render: renderGallery },
   { id: 'reasons', fav: false, icon: '🍓', subject: 'hal yang aku suka dari kamu', preview: 'tap kartunya satu-satu', time: '00:02', render: renderReasons },
   { id: 'cake',    fav: false, icon: '🎂', subject: 'tiup lilin dulu 🕯️', preview: 'jangan lupa make a wish dulu', time: '00:03', render: renderCake },
-  { id: 'coupons', fav: false, icon: '🎟️', subject: 'voucher buat kamu', preview: 'ga ada expired-nya kok', time: '00:04', chip: `🎫 ${CONFIG.coupons.length} voucher`, render: renderCoupons },
+  { id: 'coupons', fav: false, icon: '🎟️', subject: 'voucher buat kamu', preview: 'berlaku kapan aja', time: '00:04', chip: `🎫 ${CONFIG.coupons.length} voucher`, render: renderCoupons },
   { id: 'final',   fav: true, icon: '🔒', subject: 'satu lagi...', preview: 'bukanya paling terakhir ya', time: '00:05', locked: true, render: renderFinal },
 ];
 
@@ -141,9 +141,8 @@ $('#envelope').addEventListener('click', async () => {
 /* ---------- search bar easter egg & tabs ---------- */
 const searchHints = [
   `kiriman dari ${CONFIG.from}...`,
-  'cari: orang paling gemes sedunia',
-  `hasilnya cuma ${CONFIG.name} doang 🍓`,
-  'ga usah nyari yang lain ya 😤',
+  `khusus buat ${CONFIG.name} ♡`,
+  'happy birthday, sayang 🍓',
 ];
 let hintIdx = 0;
 $('#searchBar').addEventListener('click', () => {
@@ -273,8 +272,8 @@ async function renderLetter(body) {
 /* ---------- #2 gallery ---------- */
 function renderGallery(body) {
   body.innerHTML = `
-    <p>ini foto-foto kamu yang aku simpen diem-diem 🤭 tap aja kalo mau liat lebih jelas</p>
-    <div class="attach-head">📎 ${CONFIG.photos.length} foto tersimpan</div>
+    <p>kumpulan foto kamu yang paling aku suka. tap fotonya kalo mau liat ukuran penuh yaa</p>
+    <div class="attach-head">📎 ${CONFIG.photos.length} foto</div>
     <div class="gallery">${CONFIG.photos.map((p, i) => `
       <figure class="polaroid" data-i="${i}"><img src="${p.src}" alt="${escapeHtml(p.cap)}" loading="lazy"><figcaption>${escapeHtml(p.cap)}</figcaption></figure>`).join('')}
     </div>`;
@@ -318,7 +317,7 @@ $('#lightbox').addEventListener('click', (e) => { if (e.target.id === 'lightbox'
 /* ---------- #3 reasons ---------- */
 function renderReasons(body) {
   body.innerHTML = `
-    <p>sebenernya banyak, tapi segini dulu aja ya biar kamu ga kepedean wkwk. tap kartunya satu-satu</p>
+    <p>beberapa hal kecil dari kamu yang selalu bikin aku sayang. tap kartunya satu-satu yaa</p>
     <div class="reasons">${CONFIG.reasons.map((r, i) => `
       <div class="flip ${i % 2 ? 'g' : ''}"><div class="flip-inner">
         <div class="flip-face flip-front"><div><div class="num">${i + 1}</div><small>tap</small></div></div>
