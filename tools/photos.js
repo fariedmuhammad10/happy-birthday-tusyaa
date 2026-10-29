@@ -36,7 +36,7 @@ async function cropBlackBars(buf) {
   for (const f of files) {
     const buf = fs.readFileSync(path.join(SRC, f));
     const img = await cropBlackBars(buf);
-    const name = `nana-${String(i).padStart(2, '0')}.jpg`;
+    const name = `foto-${String(i).padStart(2, '0')}.jpg`;
     const out = await img
       .resize({ width: 900, height: 1400, fit: 'inside', withoutEnlargement: true })
       .jpeg({ quality: 82, mozjpeg: true })

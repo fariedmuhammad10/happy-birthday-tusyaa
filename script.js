@@ -2,68 +2,73 @@
    ✏️  EDIT DI SINI AJA — semua teks & foto bisa diganti
    ========================================================= */
 const CONFIG = {
-  name: 'Nana',
-  from: 'pacarmu',
+  name: 'tusyaa',
+  from: 'payittt',
+  whatsapp: '', // opsional: isi pake format '62812xxxxxxx' biar langsung buka chat kamu
 
-  // surat utama (email #1) — pakai \n\n buat paragraf baru
+  // surat utama (email #1)
   letter:
-`Hai sayangku, Nana 🤍
+`haii tusyaa
 
-Selamat ulang tahun ya cantik! Hari ini hari spesial kamu, jadi aku pengen bikin sesuatu yang beda, bukan cuma chat "hbd yaa" terus selesai. Makanya aku bikinin kamu website kecil ini, isinya khusus buat kamu doang.
+selamat ulang tahun yaa sayanggg 🎂
 
-Makasih ya udah lahir ke dunia ini, dan makasih udah mau jadi bagian dari hari-hari aku. Kamu tuh orang yang bisa bikin hari biasa jadi seru, bikin capek jadi ilang, dan bikin aku senyum-senyum sendiri kayak orang aneh.
+jadi gini, aku tuh bingung mau ngasih apa, terus kepikiran bikin ginian. jangan diketawain ya, aku bikinnya sambil deg-degan takut kamu ga suka wkwk
 
-Semoga di umur yang baru ini kamu makin bahagia, makin sehat, makin dimudahin semua urusannya, dan semua yang kamu impiin pelan-pelan jadi nyata. Kalau lagi capek, inget ya, ada aku yang selalu siap dengerin dan nemenin kamu.
+makasih ya udah sabar sama aku, udah mau dengerin aku ngoceh ga jelas, udah mau aku gangguin tiap hari. aku tau aku kadang nyebelin, tapi kamu tetep di sini. aku bersyukur banget sih soal itu
 
-Aku sayang kamu, hari ini, besok, dan seterusnya.`,
+doa aku buat kamu simpel aja: sehat terus, jangan kebanyakan begadang, rezekinya lancar, terus yang kamu pengen kesampean satu-satu. kalo lagi cape atau sedih jangan dipendem sendiri, cerita ke aku
+
+udah ah segini dulu, ntar malah kepanjangan. pokoknya aku sayang kamu banyak bangettt`,
 
   // foto + caption galeri (email #2)
   photos: [
-    { src: 'photos/nana-03.jpg', cap: 'cantik banget sih' },
-    { src: 'photos/nana-00.jpg', cap: 'pipi yang mau aku cubit' },
-    { src: 'photos/nana-08.jpg', cap: 'senyum andalan ♡' },
-    { src: 'photos/nana-06.jpg', cap: 'yang ini favorit aku 😆' },
-    { src: 'photos/nana-01.jpg', cap: 'manis pake kacamata' },
-    { src: 'photos/nana-05.jpg', cap: 'tatapan maut' },
-    { src: 'photos/nana-07.jpg', cap: 'rebahan aja cakep' },
-    { src: 'photos/nana-11.jpg', cap: 'mirror selfie era 📸' },
-    { src: 'photos/nana-04.jpg', cap: 'ngantuk tapi lucu' },
-    { src: 'photos/nana-12.jpg', cap: 'hormat grak! 🫡' },
-    { src: 'photos/nana-09.jpg', cap: 'pose model' },
-    { src: 'photos/nana-02.jpg', cap: 'mode galau 🥺' },
-    { src: 'photos/nana-10.jpg', cap: 'ada 4 nana, aku makin seneng' },
+    { src: 'photos/foto-03.jpg', cap: 'bando strawberry-nya lucu bgt 🍓' },
+    { src: 'photos/foto-00.jpg', cap: 'pengen nyubit pipinya' },
+    { src: 'photos/foto-08.jpg', cap: 'cantik bgt ini serius' },
+    { src: 'photos/foto-06.jpg', cap: 'INI FAVORIT AKU 😭' },
+    { src: 'photos/foto-01.jpg', cap: 'pake kacamata gini manis bgt' },
+    { src: 'photos/foto-05.jpg', cap: 'kok natapnya gitu bu' },
+    { src: 'photos/foto-07.jpg', cap: 'rebahan doang padahal' },
+    { src: 'photos/foto-11.jpg', cap: 'mirror selfie dulu 📸' },
+    { src: 'photos/foto-04.jpg', cap: 'ngantuk ya sayang' },
+    { src: 'photos/foto-12.jpg', cap: 'siap komandan 🫡' },
+    { src: 'photos/foto-09.jpg', cap: 'lagi mikirin aku pasti' },
+    { src: 'photos/foto-02.jpg', cap: 'muka minta dimanja 🥺' },
+    { src: 'photos/foto-10.jpg', cap: 'tusyaa x4 = aku makin pusing' },
   ],
 
-  // alasan aku sayang kamu (email #3)
+  // hal-hal yang aku suka dari kamu (email #3)
   reasons: [
-    'senyum kamu yang bisa bikin mood aku langsung bagus',
-    'kamu sabar banget ngadepin aku yang kadang nyebelin',
-    'cara kamu cerita hal random dengan semangat',
-    'kamu lucu, apalagi pas lagi ngambek',
-    'kamu selalu ada pas aku butuh',
-    'ketawa kamu tuh nular',
-    'kamu cantik, luar dalem (serius)',
-    'kamu bikin aku pengen jadi orang yang lebih baik',
-    'ngobrol sama kamu ga pernah bosen',
-    'ya karena kamu itu kamu, Nana 🤍',
+    'kalo ketawa suka ga ketahan, lucu',
+    'mau dengerin aku ngoceh ga jelas',
+    'kalo cerita semangat banget, aku seneng dengerinnya',
+    'ngambeknya lucu (tapi jangan sering2 ya)',
+    'sabar sama aku yang suka ngeselin',
+    'cantik. udah itu aja',
+    'nyambung diajak ngobrol apa aja',
+    'bikin aku pengen jadi lebih bener',
+    'suara kamu enak didenger',
+    'ya pokoknya kamu',
   ],
 
   // voucher (email #5)
   coupons: [
-    { icon: '🫂', title: 'Peluk sepuasnya', desc: 'berlaku kapan aja, ga ada batas waktu' },
-    { icon: '🍜', title: 'Traktir jajan bebas pilih', desc: 'kamu yang pilih, aku yang bayar' },
-    { icon: '🎬', title: 'Date ke mana aja', desc: 'nonton, jalan, kulineran, terserah kamu' },
-    { icon: '👑', title: 'Aku nurut seharian', desc: 'kamu ratunya, aku pengawalnya' },
-    { icon: '🙏', title: 'Aku ngalah duluan', desc: 'pas kamu ngambek, aku yang minta maaf duluan' },
-    { icon: '📞', title: 'Telponan sampe ketiduran', desc: 'tinggal bilang "telpon dong"' },
+    { icon: '🫂', title: 'peluk', desc: 'kapan aja, berapa lama aja' },
+    { icon: '🍜', title: 'jajan, aku yang bayar', desc: 'seblak, matcha, boba, bebas pilih' },
+    { icon: '🎬', title: 'jalan ke mana aja', desc: 'kamu yang nentuin tempatnya, aku ngikut' },
+    { icon: '👑', title: 'aku nurut seharian', desc: 'apa kata kamu deh pokoknya' },
+    { icon: '🙏', title: 'aku ngalah duluan', desc: 'kalo lagi ribut kecil, aku yang minta maaf duluan' },
+    { icon: '📞', title: 'telponan sampe ketiduran', desc: 'tinggal chat "telpon"' },
   ],
 
   final:
-`Udah sampe email terakhir nih 🥹
+`eh udah sampe sini aja hehe
 
-Makasih ya udah baca semuanya. Mungkin website ini sederhana, tapi semuanya aku bikin sambil mikirin kamu. Semoga bisa bikin kamu senyum hari ini.
+makasih ya udah mau buka satu-satu. maaf kalo masih ada kurangnya, aku bikinnya beneran niat biar kamu seneng hari ini
 
-Happy birthday sekali lagi, sayang. Semoga tahun ini jadi tahun terbaik kamu, dan semoga aku bisa terus ada di sebelah kamu buat ngerayain ulang tahun kamu yang berikutnya, berikutnya lagi, dan seterusnya.`,
+intinya aku seneng kamu lahir, dan aku seneng bisa kenal sama punya kamu. semoga taun depan aku lagi yang ngucapin yaa
+
+happy birthday tusyaa 🍓🤍`,
 };
 
 /* ========================================================= */
@@ -71,21 +76,32 @@ Happy birthday sekali lagi, sayang. Semoga tahun ini jadi tahun terbaik kamu, da
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const KEY = 'bday-' + CONFIG.name;
 
 const MAILS = [
-  { id: 'letter',  icon: '💌', subject: `Happy Birthday, ${CONFIG.name}! 🎂`, preview: 'buka ini duluan ya cantik, ada surat dari aku...', time: '00:00', chip: '📝 surat.txt', render: renderLetter },
-  { id: 'gallery', icon: '📸', subject: `lampiran: ${CONFIG.photos.length} foto kamu yang aku suka`, preview: 'aku kumpulin foto-foto kamu, semuanya cantik sih', time: '00:01', chip: `🖼️ ${CONFIG.photos.length} lampiran`, render: renderGallery },
-  { id: 'reasons', icon: '💭', subject: 'alasan aku sayang kamu (ada banyak)', preview: 'tap kartunya satu-satu ya...', time: '00:02', render: renderReasons },
-  { id: 'cake',    icon: '🎂', subject: 'tiup lilinnya dulu dong 🕯️', preview: 'jangan lupa make a wish sebelum niup ✨', time: '00:03', render: renderCake },
-  { id: 'coupons', icon: '🎟️', subject: 'voucher spesial buat kamu', preview: 'berlaku selamanya, ga bisa hangus', time: '00:04', chip: `🎫 ${CONFIG.coupons.length} voucher`, render: renderCoupons },
-  { id: 'final',   icon: '🔒', subject: 'p.s. satu lagi...', preview: 'buka ini paling terakhir ya', time: '00:05', locked: true, render: renderFinal },
+  { id: 'letter',  fav: true, icon: '💌', subject: `happy birthday ${CONFIG.name} 🎂`, preview: 'buka yang ini dulu yaa', time: '00:00', chip: '📝 surat.txt', render: renderLetter },
+  { id: 'gallery', fav: true, icon: '📸', subject: 'foto-foto kamu', preview: 'yang aku simpen diem-diem hehe', time: '00:01', chip: `🖼️ ${CONFIG.photos.length} foto`, render: renderGallery },
+  { id: 'reasons', fav: false, icon: '🍓', subject: 'hal yang aku suka dari kamu', preview: 'tap kartunya satu-satu', time: '00:02', render: renderReasons },
+  { id: 'cake',    fav: false, icon: '🎂', subject: 'tiup lilin dulu 🕯️', preview: 'jangan lupa make a wish dulu', time: '00:03', render: renderCake },
+  { id: 'coupons', fav: false, icon: '🎟️', subject: 'voucher buat kamu', preview: 'ga ada expired-nya kok', time: '00:04', chip: `🎫 ${CONFIG.coupons.length} voucher`, render: renderCoupons },
+  { id: 'final',   fav: true, icon: '🔒', subject: 'satu lagi...', preview: 'bukanya paling terakhir ya', time: '00:05', locked: true, render: renderFinal },
 ];
 
 const state = {
-  read: new Set(JSON.parse(localStorage.getItem('nana-read') || '[]')),
+  read: new Set(JSON.parse(localStorage.getItem(KEY + '-read') || '[]')),
+  filter: 'all',
   current: null,
 };
-const saveRead = () => localStorage.setItem('nana-read', JSON.stringify([...state.read]));
+const saveRead = () => localStorage.setItem(KEY + '-read', JSON.stringify([...state.read]));
+
+/* sync static labels from CONFIG */
+$('#introTitle').textContent = `haii ${CONFIG.name}!`;
+$('#envFor').textContent = `for ${CONFIG.name} 🍓`;
+$('#searchText').textContent = `kiriman dari ${CONFIG.from}...`;
+$('#footName').textContent = CONFIG.name;
+$('#metaFrom').textContent = CONFIG.from;
+$('#metaAddr').textContent = `<${CONFIG.from}@strawberry.mail>`;
+$('#metaTo').textContent = CONFIG.name;
 
 /* ---------- screens ---------- */
 function show(id) {
@@ -93,15 +109,16 @@ function show(id) {
   window.scrollTo(0, 0);
 }
 
-/* ---------- floating hearts ---------- */
+/* ---------- floating strawberry & leaf background ---------- */
 (function hearts() {
   const box = $('.bg-hearts');
-  const glyphs = ['♥', '♡', '❤', '✿'];
+  const glyphs = ['♥', '🌿', '🍓', '❀'];
   for (let i = 0; i < 18; i++) {
     const s = document.createElement('span');
     s.textContent = glyphs[i % glyphs.length];
+    if (i % 2) s.classList.add('g');
     s.style.left = Math.random() * 100 + '%';
-    s.style.fontSize = 10 + Math.random() * 18 + 'px';
+    s.style.fontSize = 11 + Math.random() * 15 + 'px';
     s.style.animationDuration = 9 + Math.random() * 10 + 's';
     s.style.animationDelay = -Math.random() * 18 + 's';
     box.appendChild(s);
@@ -121,6 +138,27 @@ $('#envelope').addEventListener('click', async () => {
   history.replaceState({ v: 'inbox' }, '');
 });
 
+/* ---------- search bar easter egg & tabs ---------- */
+const searchHints = [
+  `kiriman dari ${CONFIG.from}...`,
+  'cari: orang paling gemes sedunia',
+  `hasilnya cuma ${CONFIG.name} doang 🍓`,
+  'ga usah nyari yang lain ya 😤',
+];
+let hintIdx = 0;
+$('#searchBar').addEventListener('click', () => {
+  hintIdx = (hintIdx + 1) % searchHints.length;
+  $('#searchText').textContent = searchHints[hintIdx];
+});
+
+$$('#inboxTabs .tab').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    state.filter = btn.dataset.filter;
+    $$('#inboxTabs .tab').forEach((b) => b.classList.toggle('active', b === btn));
+    renderInbox();
+  });
+});
+
 /* ---------- inbox ---------- */
 function allOthersRead() {
   return MAILS.filter((m) => !m.locked).every((m) => state.read.has(m.id));
@@ -129,29 +167,40 @@ function allOthersRead() {
 function renderInbox() {
   const list = $('#mailList');
   list.innerHTML = '';
-  MAILS.forEach((m, i) => {
-    const locked = m.locked && !allOthersRead();
-    const li = document.createElement('li');
-    li.className = 'mail-item' + (state.read.has(m.id) ? '' : ' unread') + (locked ? ' locked' : '');
-    li.style.animationDelay = i * 0.07 + 's';
-    li.innerHTML = `
-      <div class="avatar">${locked ? '🔒' : m.locked ? '💝' : m.icon}</div>
-      <div class="mail-main">
-        <div class="mail-row"><span class="mail-from">${CONFIG.from}</span><span class="mail-time">${m.time}</span></div>
-        <div class="mail-subj">${m.subject}</div>
-        <div class="mail-prev">${locked ? 'baca email yang lain dulu ya 😝' : m.preview}</div>
-        ${m.chip ? `<span class="chip">${m.chip}</span>` : ''}
-      </div>`;
-    li.addEventListener('click', () => {
-      if (locked) {
-        li.classList.remove('shake'); void li.offsetWidth; li.classList.add('shake');
-        toast('eits, baca email yang lain dulu ya 😝');
-        return;
-      }
-      openMail(m);
-    });
-    list.appendChild(li);
+  const items = MAILS.filter((m) => {
+    if (state.filter === 'unread') return !state.read.has(m.id);
+    if (state.filter === 'fav') return m.fav;
+    return true;
   });
+
+  if (!items.length) {
+    list.innerHTML = `<li class="empty-filter">udah kebaca semua nih 🍓✨</li>`;
+  } else {
+    items.forEach((m, i) => {
+      const idx = MAILS.indexOf(m);
+      const locked = m.locked && !allOthersRead();
+      const li = document.createElement('li');
+      li.className = 'mail-item' + (state.read.has(m.id) ? '' : ' unread') + (locked ? ' locked' : '');
+      li.style.animationDelay = i * 0.06 + 's';
+      li.innerHTML = `
+        <div class="avatar ${idx % 2 ? 'g' : ''}">${locked ? '🔒' : m.locked ? '💝' : m.icon}</div>
+        <div class="mail-main">
+          <div class="mail-row"><span class="mail-from">${CONFIG.from}</span><span class="mail-time">${m.time}</span></div>
+          <div class="mail-subj">${m.subject}</div>
+          <div class="mail-prev">${locked ? 'baca yang lain dulu yaa 😝' : m.preview}</div>
+          ${m.chip ? `<span class="chip">${m.chip}</span>` : ''}
+        </div>`;
+      li.addEventListener('click', () => {
+        if (locked) {
+          li.classList.remove('shake'); void li.offsetWidth; li.classList.add('shake');
+          toast('eits, buka yang lain dulu yaa 😝');
+          return;
+        }
+        openMail(m);
+      });
+      list.appendChild(li);
+    });
+  }
   const unread = MAILS.filter((m) => !state.read.has(m.id)).length;
   $('#unreadCount').textContent = unread;
   $('#unreadCount').style.display = unread ? '' : 'none';
@@ -160,8 +209,12 @@ function renderInbox() {
 /* ---------- mail view ---------- */
 function openMail(m, push = true) {
   state.current = m;
+  const idx = MAILS.indexOf(m);
   $('#mailSubject').textContent = m.subject;
-  $('#mailTime').textContent = 'hari ini, ' + m.time;
+  $('#mailTime').textContent = 'hari ini · ' + m.time;
+  const av = $('#mailAvatar');
+  av.textContent = m.locked ? '💝' : m.icon;
+  av.classList.toggle('g', idx % 2 === 1);
   const body = $('#mailBody');
   body.innerHTML = '';
   m.render(body);
@@ -177,7 +230,7 @@ function backToInbox() {
   show('inbox');
   if (allOthersRead() && !state.read.has('final') && !backToInbox.told) {
     backToInbox.told = true;
-    setTimeout(() => toast('email terakhir udah kebuka 🔓 cek deh'), 500);
+    setTimeout(() => toast('email paling bawah udah kebuka tuh 🔓'), 500);
   }
 }
 $('#backBtn').addEventListener('click', () => {
@@ -193,11 +246,11 @@ window.addEventListener('popstate', () => {
 const typing = { cancel: false };
 async function renderLetter(body) {
   body.innerHTML = `
-    <figure class="polaroid letter-hero"><img src="photos/nana-03.jpg" alt="${CONFIG.name}"><figcaption>birthday girl ♡</figcaption></figure>
-    <p class="big-hand">Happy Birthday,<br>${CONFIG.name}!</p>
+    <figure class="polaroid letter-hero"><img src="photos/foto-03.jpg" alt="${CONFIG.name}"><figcaption>birthday girl 🍓</figcaption></figure>
+    <p class="big-hand">happy birthday,<br>${CONFIG.name}!</p>
     <div class="letter-paper" id="paper"></div>
-    <p class="sign" id="sign" style="opacity:0">— ${CONFIG.from} 💌</p>
-    <button class="skip-btn" id="skip">skip animasi</button>`;
+    <p class="sign" id="sign" style="opacity:0">— ${CONFIG.from}</p>
+    <button class="skip-btn" id="skip">langsung baca semua</button>`;
   const paper = $('#paper');
   const text = CONFIG.letter;
   typing.cancel = false;
@@ -209,7 +262,7 @@ async function renderLetter(body) {
     if (skip) { i = text.length; }
     paper.innerHTML = escapeHtml(text.slice(0, i)) + caret;
     const ch = text[i - 1];
-    await sleep(ch === '\n' ? 180 : /[.,!?]/.test(ch) ? 140 : 28);
+    await sleep(ch === '\n' ? 180 : /[.,!?:]/.test(ch) ? 140 : 28);
   }
   paper.innerHTML = escapeHtml(text);
   $('#sign').style.transition = 'opacity .8s'; $('#sign').style.opacity = 1;
@@ -220,8 +273,8 @@ async function renderLetter(body) {
 /* ---------- #2 gallery ---------- */
 function renderGallery(body) {
   body.innerHTML = `
-    <p>Ini foto-foto kamu yang aku simpen. Tap fotonya buat liat lebih gede ya 🥰</p>
-    <div class="attach-head">📎 ${CONFIG.photos.length} lampiran · semuanya cantik</div>
+    <p>ini foto-foto kamu yang aku simpen diem-diem 🤭 tap aja kalo mau liat lebih jelas</p>
+    <div class="attach-head">📎 ${CONFIG.photos.length} foto tersimpan</div>
     <div class="gallery">${CONFIG.photos.map((p, i) => `
       <figure class="polaroid" data-i="${i}"><img src="${p.src}" alt="${escapeHtml(p.cap)}" loading="lazy"><figcaption>${escapeHtml(p.cap)}</figcaption></figure>`).join('')}
     </div>`;
@@ -265,10 +318,10 @@ $('#lightbox').addEventListener('click', (e) => { if (e.target.id === 'lightbox'
 /* ---------- #3 reasons ---------- */
 function renderReasons(body) {
   body.innerHTML = `
-    <p>Sebenernya alasannya ga bakal muat ditulis semua, tapi ini ${CONFIG.reasons.length} di antaranya. Tap kartunya satu-satu ya ♡</p>
+    <p>sebenernya banyak, tapi segini dulu aja ya biar kamu ga kepedean wkwk. tap kartunya satu-satu</p>
     <div class="reasons">${CONFIG.reasons.map((r, i) => `
-      <div class="flip"><div class="flip-inner">
-        <div class="flip-face flip-front"><div><div class="num">#${i + 1}</div><small>tap aku</small></div></div>
+      <div class="flip ${i % 2 ? 'g' : ''}"><div class="flip-inner">
+        <div class="flip-face flip-front"><div><div class="num">${i + 1}</div><small>tap</small></div></div>
         <div class="flip-face flip-back">${escapeHtml(r)}</div>
       </div></div>`).join('')}
     </div>
@@ -277,23 +330,24 @@ function renderReasons(body) {
   cards.forEach((c) => c.addEventListener('click', () => {
     c.classList.toggle('flipped');
     const n = cards.filter((x) => x.classList.contains('flipped')).length;
-    $('#reasonNote').textContent = n === cards.length ? 'dan masih banyak lagi... 🤍' : `${n} / ${cards.length} kebuka`;
+    $('#reasonNote').textContent = n === cards.length ? 'masih banyak lagi sih sebenernya 🤭🍓' : `${n} / ${cards.length} kebuka`;
     if (n === cards.length && !renderReasons.done) { renderReasons.done = true; burst(0.5, 0.6, 80); }
   }));
 }
 
 /* ---------- #4 cake ---------- */
 function renderCake(body) {
-  const colors = ['#e56b7b', '#7cc6c0', '#f3c14b', '#9b8cf2', '#fff'];
+  const colors = ['#ea5b7c', '#78b38d', '#ffd3dc', '#48795b', '#fff'];
   const sprinkles = Array.from({ length: 22 }, () =>
     `<i style="left:${Math.random() * 95}%;top:${Math.random() * 90}%;background:${colors[(Math.random() * colors.length) | 0]};transform:rotate(${Math.random() * 180}deg)"></i>`).join('');
   body.innerHTML = `
-    <p>Pejamin mata, make a wish dulu, terus tiup lilinnya ya ✨<br><span class="muted">(tap apinya, atau pake tombol mic terus tiup beneran ke hp kamu)</span></p>
+    <p>merem dulu bentar, berdoa dalem hati, abis itu tiup lilinnya 🕯️<br><span class="muted">bisa tap apinya langsung, atau klik tombol mic terus tiup beneran ke hp kamu</span></p>
     <div class="cake-wrap">
       <div class="cake">
         <div class="plate"></div>
         <div class="layer layer-1"><div class="sprinkles">${sprinkles}</div></div>
         <div class="layer layer-2"></div>
+        <div class="berries"><span>🍓</span><span>🍓</span><span>🍓</span></div>
         <div class="candles">
           <div class="candle"><span class="flame"></span></div>
           <div class="candle"><span class="flame"></span></div>
@@ -306,8 +360,8 @@ function renderCake(body) {
       <button class="btn soft" id="relight" style="display:none">nyalain lagi</button>
     </div>
     <div class="wish" id="wish">
-      <p class="big-hand">yeay! happy birthday ${CONFIG.name}! 🎉</p>
-      <p>semoga semua wish kamu dikabulin ya, aamiin 🤍</p>
+      <p class="big-hand">yeyy happy birthday ${CONFIG.name}! 🎉</p>
+      <p>semoga semua yang barusan kamu minta dikabulin yaa, aamiin 🤲</p>
     </div>`;
   const candles = $$('.candle', body);
   const check = () => {
@@ -327,7 +381,7 @@ function renderCake(body) {
       if (lit) { lit.classList.add('out'); check(); }
     });
     if (ok) { $('#micBtn').textContent = '🌬️ tiup sekarang...'; toast('tiup ke arah mic hp kamu 🌬️'); }
-    else toast('mic ga bisa dipake, tap apinya aja ya ♡');
+    else toast('mic-nya ga kebaca, tap apinya langsung aja yaa');
   };
   $('#relight').onclick = () => {
     candles.forEach((c) => c.classList.remove('out'));
@@ -373,9 +427,9 @@ const Mic = {
 
 /* ---------- #5 coupons ---------- */
 function renderCoupons(body) {
-  const claimed = new Set(JSON.parse(localStorage.getItem('nana-coupons') || '[]'));
+  const claimed = new Set(JSON.parse(localStorage.getItem(KEY + '-coupons') || '[]'));
   body.innerHTML = `
-    <p>Ini voucher spesial buat kamu. Berlaku selamanya, ga ada tanggal kadaluarsa. Kalau mau dipake, klaim terus screenshot dan kirim ke aku ya 😌</p>
+    <p>voucher ini ga ada kadaluarsanya yaa. kalo mau pake tinggal klik klaim terus ss kirim ke wa aku, ntar langsung aku turutin 🫡</p>
     <div class="coupons">${CONFIG.coupons.map((c, i) => `
       <div class="coupon ${claimed.has(i) ? 'claimed' : ''}" data-i="${i}">
         <div class="coupon-left">${c.icon}</div>
@@ -388,10 +442,10 @@ function renderCoupons(body) {
       const i = +el.dataset.i;
       const on = !claimed.has(i);
       on ? claimed.add(i) : claimed.delete(i);
-      localStorage.setItem('nana-coupons', JSON.stringify([...claimed]));
+      localStorage.setItem(KEY + '-coupons', JSON.stringify([...claimed]));
       el.classList.toggle('claimed', on);
       e.target.textContent = on ? 'udah diklaim ✓' : 'klaim';
-      if (on) { const r = e.target.getBoundingClientRect(); burst(r.left / innerWidth, r.top / innerHeight, 30); toast('voucher diklaim! screenshot terus kirim ke aku 📸'); }
+      if (on) { const r = e.target.getBoundingClientRect(); burst(r.left / innerWidth, r.top / innerHeight, 30); toast('jangan lupa ss terus kirim ke aku 📸'); }
     };
   });
 }
@@ -415,23 +469,25 @@ function renderFinal(body) {
   }));
   body.innerHTML = `
     <div class="heart-grid">${cells}</div>
-    <p class="love-big">I love you,<br>${CONFIG.name} ♡</p>
+    <p class="love-big">sayang kamu,<br>${CONFIG.name} 🍓</p>
     <div class="letter-paper" style="margin-top:20px">${escapeHtml(CONFIG.final)}</div>
-    <p class="sign">— ${CONFIG.from}, yang sayang banget sama kamu 💌</p>
+    <p class="sign">— ${CONFIG.from}</p>
     <div class="reply-box">
-      <p>💬 balas email ini</p>
-      <textarea id="replyText" placeholder="tulis balasan kamu di sini..."></textarea>
-      <button class="btn pink" id="replyBtn">kirim ke aku lewat WhatsApp</button>
+      <p>💬 bales ke ${CONFIG.from}</p>
+      <textarea id="replyText" placeholder="ketik apa aja di sini..."></textarea>
+      <button class="btn pink" id="replyBtn">kirim lewat WhatsApp</button>
     </div>
-    <div class="center-row"><button class="btn soft" id="again">↺ baca ulang dari awal</button></div>`;
+    <div class="center-row"><button class="btn soft" id="again">↺ buka ulang dari awal</button></div>`;
   setTimeout(celebrate, 600);
   $('#replyBtn').onclick = () => {
     const t = $('#replyText').value.trim();
-    if (!t) { toast('tulis dulu balasannya ya 🥺'); return; }
-    window.open('https://wa.me/?text=' + encodeURIComponent('💌 balasan email ulang tahun:\n\n' + t), '_blank');
+    if (!t) { toast('ketik dulu dong jangan kosong 🥺'); return; }
+    const phone = (CONFIG.whatsapp || '').replace(/\D/g, '');
+    const base = phone ? `https://wa.me/${phone}` : 'https://wa.me/';
+    window.open(base + '?text=' + encodeURIComponent(t), '_blank');
   };
   $('#again').onclick = () => {
-    localStorage.removeItem('nana-read');
+    localStorage.removeItem(KEY + '-read');
     state.read.clear();
     location.reload();
   };
@@ -454,7 +510,7 @@ const cx = cv.getContext('2d');
 let parts = [], confettiRaf = 0;
 function resize() { cv.width = innerWidth * devicePixelRatio; cv.height = innerHeight * devicePixelRatio; }
 addEventListener('resize', resize); resize();
-const CCOLORS = ['#e56b7b', '#f19aa6', '#ffd166', '#7cc6c0', '#c3aed6', '#ffffff', '#d7263d'];
+const CCOLORS = ['#ea5b7c', '#f598ae', '#d8375d', '#78b38d', '#a9d5b7', '#48795b', '#ffffff'];
 function burst(x, y, n = 60) {
   for (let i = 0; i < n; i++) {
     const a = Math.random() * Math.PI * 2, sp = 4 + Math.random() * 9;
@@ -493,7 +549,6 @@ function tick() {
 
 /* ---------- music box "Happy Birthday" (Web Audio, no mp3 needed) ---------- */
 const Music = (() => {
-  // [note, beats]  — 3/4 time
   const N = { G4: 392, A4: 440, B4: 493.88, C5: 523.25, D5: 587.33, E5: 659.25, F5: 698.46, G5: 783.99 };
   const song = [
     ['G4', .75], ['G4', .25], ['A4', 1], ['G4', 1], ['C5', 1], ['B4', 2],
@@ -554,5 +609,4 @@ const Music = (() => {
 })();
 
 /* ---------- boot ---------- */
-// preload photos so the gallery feels instant
 CONFIG.photos.forEach((p) => { const i = new Image(); i.src = p.src; });
