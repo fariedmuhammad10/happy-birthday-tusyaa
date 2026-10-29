@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>you've got new emails 💌</title>
+  <meta name="description" content="ada email baru buat kamu, buka ya 💌" />
+  <meta name="theme-color" content="#f4efe9" />
+
+  <!-- link preview (WhatsApp / IG / etc) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="hey sayang! you've got new emails 💌" />
+  <meta property="og:description" content="ada yang spesial buat kamu hari ini, buka ya ♡" />
+  <meta property="og:image" content="https://fariedmuhammad10.github.io/happy-birthday-nana/assets/og.jpg" />
+  <meta property="og:url" content="https://fariedmuhammad10.github.io/happy-birthday-nana/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💌</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Caveat:wght@500;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-hearts" aria-hidden="true"></div>
+
+  <!-- ============ SCREEN 1 : ENVELOPE ============ -->
+  <section id="intro" class="screen active">
+    <p class="hand intro-title">hey sayang!</p>
+
+    <button class="envelope" id="envelope" aria-label="buka email">
+      <span class="env-back"></span>
+      <span class="env-letter">
+        <span class="hand">for you ♡</span>
+      </span>
+      <span class="env-front"></span>
+      <span class="env-flap"></span>
+      <span class="env-heart">
+        <svg viewBox="0 0 32 29" aria-hidden="true"><path d="M23.6 0c-3.4 0-6.3 2.7-7.6 5.6C14.7 2.7 11.8 0 8.4 0 3.8 0 0 3.8 0 8.4c0 9.4 9.5 11.9 16 21.2 6.1-9.3 16-12.1 16-21.2C32 3.8 28.2 0 23.6 0z"/></svg>
+      </span>
+    </button>
+
+    <p class="hand intro-sub">you've got new emails</p>
+    <p class="intro-hint">tap amplopnya ♡</p>
+  </section>
+
+  <!-- ============ SCREEN 2 : INBOX ============ -->
+  <section id="inbox" class="screen">
+    <div class="app">
+      <header class="app-header">
+        <div class="app-top">
+          <div>
+            <p class="app-kicker">kotak masuk</p>
+            <h1 class="app-title">Inbox</h1>
+          </div>
+          <img class="me-avatar" src="photos/nana-03.jpg" alt="Nana" />
+        </div>
+        <div class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <span id="searchText">cari kenangan sama kamu...</span>
+        </div>
+        <div class="tabs">
+          <span class="tab active">Utama <b id="unreadCount">6</b></span>
+          <span class="tab">Spesial ♡</span>
+          <span class="tab">Kenangan</span>
+        </div>
+      </header>
+
+      <ul class="mail-list" id="mailList"></ul>
+
+      <p class="list-foot">semua email ini khusus buat <b>Nana</b> doang 🤍</p>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 3 : MAIL VIEW ============ -->
+  <section id="mail" class="screen">
+    <div class="app">
+      <header class="mail-bar">
+        <button class="icon-btn" id="backBtn" aria-label="kembali">
+          <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+        </button>
+        <div class="mail-bar-actions">
+          <span class="icon-btn ghost" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14v16l-7-4-7 4z"/></svg></span>
+          <span class="icon-btn ghost" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="19" cy="12" r="1.3"/></svg></span>
+        </div>
+      </header>
+
+      <article class="mail-view">
+        <h2 class="mail-subject" id="mailSubject"></h2>
+        <div class="mail-meta">
+          <div class="avatar heart-avatar">💌</div>
+          <div class="meta-text">
+            <p><b>pacarmu</b> <span class="muted">&lt;yang.sayang.kamu@hati.com&gt;</span></p>
+            <p class="muted">kepada: Nana ♡ · <span id="mailTime"></span></p>
+          </div>
+        </div>
+        <div class="mail-body" id="mailBody"></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="tutup">✕</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="sebelumnya">‹</button>
+    <figure>
+      <img id="lbImg" alt="" />
+      <figcaption class="hand" id="lbCap"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="berikutnya">›</button>
+  </div>
+
+  <!-- toast -->
+  <div class="toast" id="toast"></div>
+
+  <!-- music toggle -->
+  <button class="music-btn" id="musicBtn" aria-label="musik">♫</button>
+
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
